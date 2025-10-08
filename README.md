@@ -71,6 +71,7 @@ e acesse: http://127.0.0.1:8000/docs
     - Adicionar paginação utilizando a lib: fastapi-pagination
         - limit e offset
 
+
 # Conclusão do Desafio
 
 Ufa! Achei que não iria chegar lá.. mas como o pessoal da Dio.me não brinca em serviço eu também não! Então, toma!
@@ -112,10 +113,16 @@ Documentação: Swagger UI disponível em /docs
 
 
 📋 Como Testar:
+
 GET /atletas - Lista todos com paginação
+
 GET /atletas?nome=João - Filtro por nome
+
 GET /atletas?cpf=12345678901 - Filtro por CPF
+
 POST /atletas - Criar atleta (retorna 303 se CPF duplicado)
+
+
         
 # Referências
 
