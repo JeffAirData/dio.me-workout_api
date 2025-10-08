@@ -70,6 +70,48 @@ e acesse: http://127.0.0.1:8000/docs
         - status_code: 303
     - Adicionar paginação utilizando a lib: fastapi-pagination
         - limit e offset
+
+# Conclusão do Desafio
+
+Ufa! Achei que não iria chegar lá.. mas como o pessoal da Dio.me não brinca em serviço eu também não! Então, toma!
+Tive muitas dificuldades durante o processo, mas com ajuda da Nayanna Nara e com um pouco de GitHub Copilot tudo se resolveu.
+Meu código se diferenciou um pouco do que foi passado pela Instrutora na busca de uma melhor adequação à realidade que enfrentei, como por exemplo o 'asyncpg' não funcionou nem por reza braba, o que acabou sendo mudado para o 'psycopg2-binary'. Fica a dica.
+
+### Perfeito! Agora temos implementado todos os requisitos do Desafio DIO.me:
+
+✅ Requisitos do Desafio Implementados:
+
+1. Query Parameters nos Endpoints - Atleta ✅
+✅ nome: Filtro por nome do atleta
+✅ cpf: Filtro por CPF do atleta
+
+2. Response Customizada - GET all Atleta ✅
+✅ nome: Nome do atleta
+✅ centro_treinamento: Nome do centro de treinamento
+✅ categoria: Nome da categoria
+
+3. Exceção de Integridade ✅
+✅ sqlalchemy.exc.IntegrityError: Capturada e tratada
+✅ Mensagem: "Já existe um atleta cadastrado com o cpf: x"
+✅ Status Code: 303
+
+4. Paginação com fastapi-pagination ✅
+✅ limit e offset: Implementado através do Page[AtletaCustomOut]
+✅ fastapi-pagination: Configurado no main.py
+
+🚀 Funcionalidades Extras Implementadas:
+Async/Await: Todas as funções são assíncronas conforme especificado
+psycopg: Driver PostgreSQL moderno com suporte async
+Tratamento de Erros: Rollback automático em todas as operações
+Validação de Dados: Pydantic schemas para validação
+Documentação: Swagger UI disponível em /docs
+
+📋 Como Testar:
+GET /atletas - Lista todos com paginação
+GET /atletas?nome=João - Filtro por nome
+GET /atletas?cpf=12345678901 - Filtro por CPF
+POST /atletas - Criar atleta (retorna 303 se CPF duplicado)
+        
 # Referências
 
 FastAPI: https://fastapi.tiangolo.com/
