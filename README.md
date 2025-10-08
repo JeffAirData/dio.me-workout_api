@@ -156,7 +156,7 @@ workout_api/
 
 ## 👨‍💻 **Autor**
 
-**Jefferson Magalhães** - [GitHub](https://github.com/JeffAirData)
+**Jefferson Melo** - [GitHub](https://github.com/JeffAirData)
 
 Desenvolvido como parte do bootcamp **Digital Innovation One (DIO.me)**
 
