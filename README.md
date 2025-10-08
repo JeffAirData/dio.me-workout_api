@@ -82,15 +82,18 @@ Meu código se diferenciou um pouco do que foi passado pela Instrutora na busca 
 ✅ Requisitos do Desafio Implementados:
 
 1. Query Parameters nos Endpoints - Atleta ✅
+   
 ✅ nome: Filtro por nome do atleta
 ✅ cpf: Filtro por CPF do atleta
 
 2. Response Customizada - GET all Atleta ✅
+   
 ✅ nome: Nome do atleta
 ✅ centro_treinamento: Nome do centro de treinamento
 ✅ categoria: Nome da categoria
 
 3. Exceção de Integridade ✅
+   
 ✅ sqlalchemy.exc.IntegrityError: Capturada e tratada
 ✅ Mensagem: "Já existe um atleta cadastrado com o cpf: x"
 ✅ Status Code: 303
@@ -99,12 +102,14 @@ Meu código se diferenciou um pouco do que foi passado pela Instrutora na busca 
 ✅ limit e offset: Implementado através do Page[AtletaCustomOut]
 ✅ fastapi-pagination: Configurado no main.py
 
+
 🚀 Funcionalidades Extras Implementadas:
 Async/Await: Todas as funções são assíncronas conforme especificado
 psycopg: Driver PostgreSQL moderno com suporte async
 Tratamento de Erros: Rollback automático em todas as operações
 Validação de Dados: Pydantic schemas para validação
 Documentação: Swagger UI disponível em /docs
+
 
 📋 Como Testar:
 GET /atletas - Lista todos com paginação
